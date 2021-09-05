@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['"Open Sans"'],
+      digikid: ['"Suez One"'],
     },
+
     extend: {},
   },
   variants: {
