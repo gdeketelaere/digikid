@@ -1,6 +1,41 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
   font-size: 62.5%;
 }
-@tailwind components;
-@tailwind utilities;
+@layer base {
+  p {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-family: "Suez One";
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    text-transform: uppercase;
+    @apply text-purple-800;
+  }
+  .dark h3 {
+    @apply text-white;
+  }
+  .dark h4 {
+    @apply text-yellow-400;
+  }
+  .dark p {
+    @apply text-white;
+  }
+
+  h4 {
+    font-family: "Open sans";
+    font-weight: 900;
+    font-size: 1.8rem;
+    @apply text-purple-900;
+  }
+  h5 {
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    @apply text-purple-900;
+  }
+}
